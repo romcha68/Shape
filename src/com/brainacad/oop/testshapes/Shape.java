@@ -22,7 +22,7 @@ public abstract class Shape implements Drawable, Comparable {
             return 0;
         return -1;
     }
-/*
+
     public static Shape parseShape(String args) {
         String[] params = args.split(":");
         switch (params[0].toLowerCase()) {
@@ -34,7 +34,7 @@ public abstract class Shape implements Drawable, Comparable {
                 return Circle.parseCircle(args);
         }
     }
-*/
+
     @Override
     public void draw() {
         System.out.println("This is " + this.toString());

@@ -14,7 +14,7 @@ public class Triangle extends Shape {
         this.b = b;
         this.c = c;
     }
-/*
+
     public static Triangle parseTriangle(String args) {
         String[] params = args.split(":");
         String[] sizes = params[2].split(",");
@@ -23,7 +23,7 @@ public class Triangle extends Shape {
         double c = Double.parseDouble(sizes[2]);
         return new Triangle(params[1], a, b, c);
     }
-*/
+
     public double calcArea() {
         double p = (a + b + c) / 2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));

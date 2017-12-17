@@ -10,6 +10,14 @@ public class Circle extends Shape {
         super(colorShape);
         this.radius = radius;
     }
+
+    public static Circle parseCircle(String args) {
+        String[] params = args.split(":");
+        String[] sizes = params[2].split(",");
+        double r = Double.parseDouble(sizes[0]);
+        return new Circle(params[1], r);
+    }
+
     @Override
     public double calcArea() {
         return Math.pow(radius,2) * 3.14;

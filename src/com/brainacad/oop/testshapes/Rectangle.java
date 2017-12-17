@@ -12,7 +12,7 @@ public class Rectangle extends Shape {
         this.width = width;
         this.height = height;
     }
-/*
+
     public static Rectangle parseRectangle(String args) {
         String[] params = args.split(":");
         String[] sizes = params[2].split(",");
@@ -20,7 +20,7 @@ public class Rectangle extends Shape {
         double b = Double.parseDouble(sizes[1]);
         return new Rectangle(params[1], a, b);
     }
-*/
+
     public double calcArea() {
         return width * height;
     }
